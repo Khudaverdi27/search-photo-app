@@ -5,6 +5,8 @@ let inputSearch = document.querySelector(".inputSearch")
 let btnReset = document.querySelector(".btnReset")
 let btnSubmit = document.querySelector(".btnSubmit")
 let searchIcon = document.querySelector(".fa-magnifying-glass")
+let carouselinner = document.querySelector(".carousel-inner ")
+
 
 runEventListener()
 
@@ -69,9 +71,27 @@ function exportImagesHtml(pictures) {
     div.classList.add("imgs")
     let img = document.createElement('img');
     img.setAttribute('src', pictures)
+    img.setAttribute('data-bs-target', "#exampleModalToggle")
+    img.setAttribute('data-bs-toggle', "modal")
     img.width = "250",
         img.height = "230"
     div.appendChild(img)
     imageWrapper.appendChild(div)
 
+    //send images to modal container
+    let carouselitem = document.createElement('div');
+    carouselitem.classList.add("carousel-item")
+    let imgCarusel = document.createElement('img');
+    imgCarusel.classList.add("d-block")
+    imgCarusel.classList.add("newPic")
+    imgCarusel.setAttribute('src', pictures)
+    carouselitem.appendChild(imgCarusel)
+    //creating slideshow
+    Array.from(carouselinner.children).forEach((child, index) => {
+        if (index == 0) {
+            child.classList.add("active")
+        }
+    })
+    carouselinner.appendChild(carouselitem)
 }
+
