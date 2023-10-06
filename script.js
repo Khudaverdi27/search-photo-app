@@ -83,7 +83,7 @@ function exportImagesHtml(pictures) {
     carouselitem.classList.add("carousel-item")
     let imgCarusel = document.createElement('img');
     imgCarusel.classList.add("d-block")
-    imgCarusel.classList.add("newPic")
+    imgCarusel.classList.add("carouselPic")
     imgCarusel.setAttribute('src', pictures)
     carouselitem.appendChild(imgCarusel)
     //creating slideshow
