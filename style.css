@@ -10,7 +10,7 @@ h1 {
     text-align: center;
 }
 
-.container {
+.container-body {
     background-image: linear-gradient(to right, #ffefba, #ffffff);
     height: 100vh;
 }
