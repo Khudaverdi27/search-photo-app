@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-image: linear-gradient(to right, #ffefba, #ffffff);
+    height: 100vh;
+}
+
+.formWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputSearch {
+    font-size: 20px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border: 2px solid rgb(11, 163, 239);
+
+}
+
+.inputSearch:focus {
+    border: 2px solid rgb(239, 220, 11);
+    outline: 2px solid rgb(239, 182, 11);
+}
+
+.input-container {
+    margin-top: 20px;
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+.icon {
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(52, 122, 207);
+    padding: 8.3px;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+}
+
+.fa-magnifying-glass:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.imageWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons {
+    width: 20%;
+    display: flex;
+}
+
+.btn {
+    margin: 5px 10px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.btn:active {
+    opacity: .5;
+}
+
+img {
+    border-radius: 15px;
+    border-style: double;
+}
+
+@media(max-width:768px) {
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .buttons {
+        width: 40%;
+        margin-right: 15px;
+    }
+
+    .btn {
+
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .inputSearch {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
