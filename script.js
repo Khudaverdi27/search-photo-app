@@ -36,6 +36,9 @@ function SearchImage() {
     Array.from(imageWrapper.children).forEach((child) => {
         child.remove()
     });
+    Array.from(carouselinner.children).forEach((child) => {
+        child.remove()
+    });
 }
 async function getData(data) {
 
@@ -94,4 +97,3 @@ function exportImagesHtml(pictures) {
     })
     carouselinner.appendChild(carouselitem)
 }
-
